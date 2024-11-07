@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block content%}
+
+<div class="text-center card-detail bg-grey">
+    <h1>{{post.title}}</h1>
+    <h2 class="my-2 h5">{{post.date|date:'F jS Y'}}</h2>
+    <img class="img-fluid" src="{{post.image.url}}" alt="{{post.title}}">
+    <div class="my-4 py-2">
+        <p>{{post.description}}</p>
+    </div>
+</div>
+
+{% endblock%}
