@@ -1,9 +1,0 @@
-[build]
-  base = "/"
-  command = "pip install -r requirements.txt && python manage.py collectstatic --noinput && gunicorn portfolio.wsgi"
-  publish = "/static"
-
-[[redirects]]
-  from = "/"
-  to = "/home.html"
-  status = 200
